@@ -68,13 +68,13 @@ Asensin VirtualBoxiin Kali Linuxin. Minulla ei ollut juurikaan ongelmia siinä, 
 
 Alla olevassa kuvassa olen merkannut kuvakkeen, josta huomaa että yhteys oli pois. Selaimestakin toki huomasi, että yhteys oli poikki.
 
-![](/home/aapo/.config/marktext/images/2025-10-26-13-04-17-nettiyhteys-katkaistu.png)
+![Kuva nettiyhteyden kuvakkeesta katkaistuna](nettiyhteys-katkaistu.png)
 
 **Kuva 1.** Internet-yhteys poistettu virtuaalikoneesta
 
 Alla olevassa kuvassa puolestaan minulla on internet-yhteys jälleen päällä, joka näkyy kuvassa kuvakkeena, jonka olen merkannut. Olin päässyt myös wikipedian sivuille.
 
-![](/home/aapo/.config/marktext/images/2025-10-26-13-04-27-nettiyhteys-toimii.png)
+![Kuva nettiyhteyden kuvakkeesta yhdistettynä internetiin](nettiyhteys-toimii.png)
 
 **Kuva 2.** Internet-yhteys palautettu virtuaalikoneeseen
 
@@ -92,7 +92,7 @@ sudo apt-get install wireshark
 
 Minulle ei tullut ilmoitusta, haluanko sallia myös ei-pääkäyttäjien olevan oikeutettu kaappaamaan paketteja. Kävin tarkastamassa ryhmään "wireshark" kuuluvat käyttäjät. Kyseisestä ryhmästä löytyi käyttäjäni, joten kaikki oli kunnossa.
 
-![](/home/aapo/.config/marktext/images/2025-10-26-13-04-37-wireshark-ryhmä.png)
+![Kuva wireshark-ryhmän jäsenistä](wireshark-ryhmä.png)
 
 Kuvassa:
 
@@ -120,7 +120,7 @@ wireshark #Avaa käyttäjälläni wireshark-ohjelman graafisen käyttöliittymä
 
 Avasin Mozilla Firefoxin selaimen, joka otti yhteyden aloitussivuun [kali.org](kali.org). Tämän jälkeen menin katsomaan wiresharkilla kaapattua liikennettä. Pysäytin liikenteen kaappaamisen, jotta on helpompi aloittaa analysoiminen.
 
- ![](/home/aapo/.config/marktext/images/2025-10-26-13-04-51-wireshark-kali-org.png)
+ ![Kuva kalin nettisivuista](wireshark-kali-org.png)
 
 **Kuva 3.** Kaappaus liikenteestä wiresharkilla
 
@@ -130,7 +130,7 @@ Avasin Mozilla Firefoxin selaimen, joka otti yhteyden aloitussivuun [kali.org](k
 
 Otin tehtävään tarkasteluksi c-kohdassa kaapatusta liikenteestä yhden paketin.
 
-![](/home/aapo/.config/marktext/images/2025-10-26-13-05-01-wireshark-tcp-ip.png)
+![Kuva kaapatun paketin tiedoista](wireshark-tcp-ip.png)
 
 **Kuva 4.** Pakettikohtaiset TCP/IP kerrokset wiresharkissa
 
@@ -170,7 +170,7 @@ Yritin etsiä tietoa MAC-osoitteen 52\:54\:00\:2f\:e1:e5 valmistajasta. Osoittee
 
 Katsoin myös IEEE:n sivuilta, mutta en löytänyt kyseistä OUI:tä (IEEE. URL: [Standards-oui](https://standards-oui.ieee.org/). Löysin artikkelin, jonka mukaan kyse olisi todennäköisesti LAA (Locally Administered MAC Address), joka ei ole liitettävissä mihinkään valmistajaan. LAA-osoitteilla ei ole IEEE:n tietokannassa merkintöjä ja niitä voidaan luoda ohjelman toimesta. (macaddresslookup.io. URL: [Locally vs Universally Administered MAC Addresses: What’s the Difference?](https://macaddresslookup.io/blogs/what-is-the-difference-between-locally-administered-and-universally-administered-mac-addresses).) Uskon siis hyvin vahvasti kaappauksen olevan virtuaalikoneella toteutettu. Lisäksi paketeista näkee, että LAA:n bitti on asetettu ylös sekä huomionarvoista on kohdeosoitteen sama OUI-osa, kuin lähettävän osoitteen, joten tämäkin viittaa virtuaalikoneeseen. Virtuaalikoneiden oletusyhdyskäytävä on myös tietääkseni virtuaalinen, jollei sitä erikseen laita asetuksista kuulumaan samaan verkkoon kuin "host" kone.
 
-![](/home/aapo/.config/marktext/images/2025-10-26-13-05-23-lla-mac.png)
+![Kuva laa MAC-osoitteista](lla-mac.png)
 
 **Kuva 5.** Paketista näkyy kuinka LAA bitti on ylhäällä
 
@@ -236,7 +236,7 @@ chromium &
 
 Sitten menin sivuille terokarvinen.com chromium selaimella, jonka jälkeen tarkastin lokitiedoston, jos sinne olisi tullut tietoja. Siellä niitä olikin kuten alla olevasta kuvasta ilmenee. Laitoin kuvan vain tiedoston koosta tietoturvasyistä.
 
-![](/home/aapo/.config/marktext/images/2025-10-26-13-22-50-sslkeylog-file-size.png)
+![Kuva sslkeylog-tiedostosta](sslkeylog-file-size.png)
 
 **Kuva 6.** "sslkeylog.log" tiedoston koko "Desktop" hakemistossa
 
@@ -246,13 +246,13 @@ Rivillä oleva "27K" tarkoittaa, että tiedosto on 27KB (27 kilotavua).
 
 Lisäsin ohjeiden mukaan wiresharkista "Edit --> Preferences -->Protocols --> TLS" kohdasta (Pre)-Master-Secret log filename kohtaan tiedostopolun /home/aapo/Desktop/sslkeylog.log.
 
-![](/home/aapo/.config/marktext/images/2025-10-26-13-44-45-wireshark-master-secret-log-file.png)
+![Master secret tiedosto lisättynä wiresharkiin](wireshark-master-secret-log-file.png)
 
 **Kuva 7.** Lokitiedoston lisääminen wiresharkin asetuksista
 
 Tämän jälkeen löysinkin raportin tekohetkellä olevan weppipalvelimen, mutta tämä ei toki tarkoita sitä, että weppipalvelin olisi ollut sama tehtävänannossa olleessa kaappauksessa.
 
-![](/home/aapo/.config/marktext/images/2025-10-26-13-40-31-apache-palvelin-wireshark.png)
+![Kuva palvelimen tyypistä](apache-palvelin-wireshark.png)
 
 **Kuva 8.** Salaamaton liikenne osoitteesta terokarvinen.com
 
@@ -266,7 +266,7 @@ Aloitin tehtävän kaappaamalla wireshark liikennettä chromium selaimella, jote
 
 Otin tarkasteluun kyseisenlaisen paketin.
 
-![](/home/aapo/.config/marktext/images/2025-10-26-19-03-32-wireshark-paketin-tavut.png)
+![Kaapatun paketin tavut](wireshark-paketin-tavut.png)
 
 **Kuva 9.** Kaapattu paketti, josta tein analyysin
 
@@ -276,7 +276,7 @@ Ensimmäisellä rivillä on framen numero kaappauksessa, joka on tässä tapauks
 
 "interface eth0, id" on selkeästi verkkoportti (network interface) ja sen tunniste eli id.
 
-![](/home/aapo/.config/marktext/images/2025-10-26-19-42-14-wireshark-interface-selitys.png)
+![Käytettävä verkkoportti](wireshark-interface-selitys.png)
 
 **Kuva 10.** "Interface" osio kaapatusta paketista.
 
@@ -288,7 +288,7 @@ Ensimmäisellä rivillä on framen numero kaappauksessa, joka on tässä tapauks
 
 Seuraavaksi siirryin seuraavaan osioon paketista, joka liittyy vieläkin lähiverkon linkkikerrokseen.
 
-![](/home/aapo/.config/marktext/images/2025-10-26-19-52-58-link-layer2-analyysi.png)
+![Kuva linkkikerroksesta](link-layer2-analyysi.png)
 
 **Kuva 11.** Linkkikerroksen toinen osa
 
@@ -296,7 +296,7 @@ Tässä osiossa näkyi uudestaan Ethernet-protokollan käyttö. Lisäksi oli lä
 
 Seuraavaksi oli Internet-kerroksen vuoro.
 
-![](/home/aapo/.config/marktext/images/2025-10-26-20-07-23-internet-kerros-analyysi.png)
+![Kuva internet-kerroksesta](internet-kerros-analyysi.png)
 
 **Kuva 12.** Paketin internet-kerros
 
@@ -314,7 +314,7 @@ Lisäksi oli otsakkeen pituus (Header Length), "Differentiated Services Field", 
 
 Oli vuorossa siirtokerros.
 
-![](/home/aapo/.config/marktext/images/2025-10-26-20-45-17-siirtokerros-analyysi.png)
+![Kuva siirtokerroksesta](siirtokerros-analyysi.png)
 
 **Kuva 13.** Paketin siirtokerros
 
@@ -322,7 +322,7 @@ Oli vuorossa siirtokerros.
 
 "Len" ilmoittaa seuraavan kerroksen datan määrän, joka tässä tapauksessa on 0. "Conversation completeness" ilmoittaa keskustelun vaiheesta, tallentamalla keskustelussa käytetyt segmenttien tyypit (Chappell. URL: [Using Wireshark's TCP Conversation Completeness](https://www.chappell-university.com/post/how-to-wireshark-tcp-conversation-completeness)).
 
-![](/home/aapo/.config/marktext/images/2025-10-26-20-56-56-tcp-flags-analyysi.png)
+![TCP:n analyysikuva](tcp-flags-analyysi.png)
 
 **Kuva 14.** TCP-protokollaan liittyvät segmenttien tyypit
 
@@ -332,7 +332,7 @@ Oli vuorossa siirtokerros.
 
 Minun piti ottaa toinen paketti, jotta voisin analysoida sovelluskerroksen dataa.
 
-![](/home/aapo/.config/marktext/images/2025-10-26-21-22-19-tls-analyysi.png)
+![Kuva sovelluskerroksesta](tls-analyysi.png)
 
 **Kuva 15.** Sovelluskerroksen tietoja
 
@@ -387,11 +387,10 @@ Wikipedia. 9.9.2025. Internet checksum. Luettavissa: [Internet checksum - Wikipe
 Wireshark. bytes on wire vs. bytes captured. Luettavissa: [bytes on wire vs. bytes captured](https://osqa-ask.wireshark.org/questions/46163/bytes-on-wire-vs-bytes-captured). Luettu: 26.10.2025.
 
 Wireshark. TLS. Luettavissa: [TLS - Wireshark Wiki](https://wiki.wireshark.org/TLS#extracting-decryption-secrets-to-a-text-file). Luettu: 26.10.2025.
-
-
-
-
-
-
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 *Tätä dokumenttia saa kopioida ja muokata GNU General Public License (versio 3 tai uudempi) mukaisesti. http://www.gnu.org/licenses/gpl.html*
