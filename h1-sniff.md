@@ -94,6 +94,8 @@ Minulle ei tullut ilmoitusta, haluanko sallia myös ei-pääkäyttäjien olevan 
 
 ![Kuva wireshark-ryhmän jäsenistä](wireshark-ryhmä.png)
 
+**Kuva 3.** Wireshark-ryhmän jäsenet
+
 Kuvassa:
 
 - getent group wireshark = Hakee tiedostosta /etc/group syötteen "wireshark" kohdasta
@@ -122,7 +124,7 @@ Avasin Mozilla Firefoxin selaimen, joka otti yhteyden aloitussivuun [kali.org](k
 
  ![Kuva kalin nettisivuista](wireshark-kali-org.png)
 
-**Kuva 3.** Kaappaus liikenteestä wiresharkilla
+**Kuva 4.** Kaappaus liikenteestä wiresharkilla
 
 ## d) Oikeesti TCP/IP. Osoita TCP/IP-mallin neljä kerrosta yhdestä siepatusta paketista. Voit selityksen tueksi laatikoida ne ruutukaappauksesta. (Voit käyttää vastauksesi osana ruutukaappaustasi h0-tehtävästä, mutta tässä tehtävässä tarvitaan myös sanallinen selitys.)
 
@@ -132,7 +134,7 @@ Otin tehtävään tarkasteluksi c-kohdassa kaapatusta liikenteestä yhden paketi
 
 ![Kuva kaapatun paketin tiedoista](wireshark-tcp-ip.png)
 
-**Kuva 4.** Pakettikohtaiset TCP/IP kerrokset wiresharkissa
+**Kuva 5.** Pakettikohtaiset TCP/IP kerrokset wiresharkissa
 
 Kuvassa punaisella värillä laatikoitu alue on TCP/IP-mallin linkkikerros (Link layer), joka on lähiverkkoon (LAN) liittyvä kerros. Siinä yhtenä tärkeänä protokollana toimii fyysinen osoite, eli MAC-osoite (Media Access Control -osoite). Jokaisella verkon laitteella on oma MAC-osoite, jonka avulla ne voivat viestiä lähiverkossa. Tässä tapauksessa lähiverkon ethernet-protokollaa hyödynnetään MAC-osoitteen rinnalla. "Src: 52\:54\:00\:12\:35:02" on lähettävän laitteen MAC-osoite (tässä tapauksessa virtuaalikoneeni oletusyhdyskäytävä) ja "Dst: 08\:00\:27\:7c\:c5:2b" on vastaanottajalaitteen MAC-osoite (tässä tapauksessa virtuaalikoneeni MAC-osoite).
 
@@ -172,7 +174,7 @@ Katsoin myös IEEE:n sivuilta, mutta en löytänyt kyseistä OUI:tä (IEEE. URL:
 
 ![Kuva laa MAC-osoitteista](lla-mac.png)
 
-**Kuva 5.** Paketista näkyy kuinka LAA bitti on ylhäällä
+**Kuva 6.** Paketista näkyy kuinka LAA bitti on ylhäällä
 
 Aikaa oli mennyt tehtävän tekemiseen jo melko paljon, sekä uskoin vahvasti, että LAA-osoitetta on lähes mahdoton yhdistää mihinkään verkkokortin valmistajaan, joten jatkoin seuraavaan tehtävään.
 
@@ -238,7 +240,7 @@ Sitten menin sivuille terokarvinen.com chromium selaimella, jonka jälkeen tarka
 
 ![Kuva sslkeylog-tiedostosta](sslkeylog-file-size.png)
 
-**Kuva 6.** "sslkeylog.log" tiedoston koko "Desktop" hakemistossa
+**Kuva 7.** "sslkeylog.log" tiedoston koko "Desktop" hakemistossa
 
 Rivillä oleva "27K" tarkoittaa, että tiedosto on 27KB (27 kilotavua).
 
@@ -248,13 +250,13 @@ Lisäsin ohjeiden mukaan wiresharkista "Edit --> Preferences -->Protocols --> TL
 
 ![Master secret tiedosto lisättynä wiresharkiin](wireshark-master-secret-log-file.png)
 
-**Kuva 7.** Lokitiedoston lisääminen wiresharkin asetuksista
+**Kuva 8.** Lokitiedoston lisääminen wiresharkin asetuksista
 
 Tämän jälkeen löysinkin raportin tekohetkellä olevan weppipalvelimen, mutta tämä ei toki tarkoita sitä, että weppipalvelin olisi ollut sama tehtävänannossa olleessa kaappauksessa.
 
 ![Kuva palvelimen tyypistä](apache-palvelin-wireshark.png)
 
-**Kuva 8.** Salaamaton liikenne osoitteesta terokarvinen.com
+**Kuva 9.** Salaamaton liikenne osoitteesta terokarvinen.com
 
 Weppipalvelin oli raportintekohetkellä Apache, versio 2.2.14 (Ubuntu)
 
@@ -268,7 +270,7 @@ Otin tarkasteluun kyseisenlaisen paketin.
 
 ![Kaapatun paketin tavut](wireshark-paketin-tavut.png)
 
-**Kuva 9.** Kaapattu paketti, josta tein analyysin
+**Kuva 10.** Kaapattu paketti, josta tein analyysin
 
 Oikealla puolella onkin paketin tavut näytettynä. Tavu osiosta näkee hexadesimaaleina paketin datan. (Sharpe, Warnicke & Lamping. URL: [3.20. The “Packet Bytes” Pane](https://www.wireshark.org/docs/wsug_html_chunked/ChUsePacketBytesPaneSection.html).)  
 
@@ -278,7 +280,7 @@ Ensimmäisellä rivillä on framen numero kaappauksessa, joka on tässä tapauks
 
 ![Käytettävä verkkoportti](wireshark-interface-selitys.png)
 
-**Kuva 10.** "Interface" osio kaapatusta paketista.
+**Kuva 11.** "Interface" osio kaapatusta paketista.
 
 "Encapsulation type" on selkeästi käytetty protokolla lähiverkossa, tässä tapauksessa ethernet. Paketissa näkyy myös selkeästi aikoja, jolloin paketit on saapunut kohdissa "Arrival Time", "UTC Arrival Time" ja "Epoch Arrival Time".
 
@@ -290,7 +292,7 @@ Seuraavaksi siirryin seuraavaan osioon paketista, joka liittyy vieläkin lähive
 
 ![Kuva linkkikerroksesta](link-layer2-analyysi.png)
 
-**Kuva 11.** Linkkikerroksen toinen osa
+**Kuva 12.** Linkkikerroksen toinen osa
 
 Tässä osiossa näkyi uudestaan Ethernet-protokollan käyttö. Lisäksi oli lähde ja kohde MAC-osoitteet sekä LG bit, joita avasinkin jo aikaisemmassa tehtävässä. Selkeästi "IG bit" tarkoittaa, että tässä tapauksessa, kun bitti on alhaalla eli 0, MAC-osoite on unicast-osoite, eikä esim. multicast tai broadcast. Lisäksi "LG bit" on alhaalla eli 0 lähde MAC-osoitteessa, joten tämä on "Globally unique address". Tämä tarkoittanee sitä, että MAC-osoitteen voi yhdistää valmistajaan, kuten jo osoitteessa näkyykin "PCSSystemtec". Type: IPv4 kertoo internet-kerroksen protokollan.
 
@@ -298,7 +300,7 @@ Seuraavaksi oli Internet-kerroksen vuoro.
 
 ![Kuva internet-kerroksesta](internet-kerros-analyysi.png)
 
-**Kuva 12.** Paketin internet-kerros
+**Kuva 13.** Paketin internet-kerros
 
 Ensimmäiseksi internet-kerroksessa ilmoitettiin käytettävän protokollan versio, joka tässä tapauksessa oli "Internet Protocol Version 4". Sitten oli lähde- ja kohde IPv4-osoitteet (Src: 10.0.2.15 ja Dst: 216.58.210.132).
 
@@ -316,7 +318,7 @@ Oli vuorossa siirtokerros.
 
 ![Kuva siirtokerroksesta](siirtokerros-analyysi.png)
 
-**Kuva 13.** Paketin siirtokerros
+**Kuva 14.** Paketin siirtokerros
 
 "Transmission Control Protocol" on käytettävä protokolla. Toinen yleinen olisi UDP. "Src Port" on lähdeportti ja "Dst Port" on vastaanottajan portti, joka on tapauksessa "well known" portti numero 443 salatulle http-yhteydelle. "Seq" ja "Ack" arvot ovat puolestaan segmentin toimituksen varmuuteen liittyviä tekijöitä, joilla viestitään segmenttejä, joita itse on lähettänyt ja mitä segmenttejä vastaanottaja odottaa seuraavaksi.
 
@@ -324,7 +326,7 @@ Oli vuorossa siirtokerros.
 
 ![TCP:n analyysikuva](tcp-flags-analyysi.png)
 
-**Kuva 14.** TCP-protokollaan liittyvät segmenttien tyypit
+**Kuva 15.** TCP-protokollaan liittyvät segmenttien tyypit
 
 "Flags" kohdassa on kyseisen segmentin tyypit. "Window" liittyy pakettien sujuvaan siirtoon ja vastaanottajan kykyyn käsitellä dataa (Wikipedia. URL: [TCP window scale option - Wikipedia](https://en.wikipedia.org/wiki/TCP_window_scale_option)).
 
@@ -334,7 +336,7 @@ Minun piti ottaa toinen paketti, jotta voisin analysoida sovelluskerroksen dataa
 
 ![Kuva sovelluskerroksesta](tls-analyysi.png)
 
-**Kuva 15.** Sovelluskerroksen tietoja
+**Kuva 16.** Sovelluskerroksen tietoja
 
 "TLSv1.3 Record Layer" ja "Version: TLS 1.2" ovat ristiriidassa keskenään, mutta ilmeisesti niiden molempien läsnäolo liittyy yhteensopivuusongelmiin (Stack Exchange Inc. URL: [Why does Wireshark show Version TLS 1.2 here instead of TLS 1.3? - Network Engineering Stack Exchange](https://networkengineering.stackexchange.com/questions/55752/why-does-wireshark-show-version-tls-1-2-here-instead-of-tls-1-3)). Samalta riviltä näkyy, että http (Hypertext Transfer Protocol) protokollaa kuljetetaan paketissa. 
 
