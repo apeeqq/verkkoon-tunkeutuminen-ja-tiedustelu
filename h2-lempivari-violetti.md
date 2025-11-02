@@ -82,21 +82,21 @@ Sitten olikin lokitiedostoon ilmestynyt tietoa.
 
 - Kuvassa rivi: 127.0.0.1 - - [31/Oct/2025\:13\:34:41 +0200] "GET / HTTP/1.1" 200 3383 "-" "Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0"
   
-  - 127.0.0.1 = IP-osoite, josta pyyntö oli tullut
+  - **127.0.0.1** = IP-osoite, josta pyyntö oli tullut
   
-  - Ensimmäinen väliviiva IP-osoitteen jälkeen = Asiakkaan identiteettitieto, tässä tapauksessa sitä ei ole
+  - **Ensimmäinen väliviiva IP-osoitteen jälkeen** = Asiakkaan identiteettitieto, tässä tapauksessa sitä ei ole
   
-  - Toinen väliviiva = Käyttäjän tunniste, jota esimerkkitapauksessa ei ole
+  - **Toinen väliviiva** = Käyttäjän tunniste, jota esimerkkitapauksessa ei ole
   
-  - [31/Oct/2025\:13\:34:41 +0200] = Pyynnön aika ja päivämäärä
+  - **[31/Oct/2025\:13\:34:41 +0200]** = Pyynnön aika ja päivämäärä
   
-  - "GET / HTTP/1.1" = GET on metodi http-pyynnössä, / on resurssi, jota pyydetään (tässä tapauksessa juurihakemisto), HTTP/1.1 on käytetty protokolla
+  - **"GET / HTTP/1.1"** = GET on metodi http-pyynnössä, / on resurssi, jota pyydetään (tässä tapauksessa juurihakemisto), HTTP/1.1 on käytetty protokolla
   
-  - 200 = Http:n tilakoodi, joka tässä tapauksessa ilmaisee onnistunutta suoritusta
+  - **200** = Http:n tilakoodi, joka tässä tapauksessa ilmaisee onnistunutta suoritusta
   
-  - 3383 = Objektin koko tavuina, joka on lähetetty asiakkaalle
+  - **3383** = Objektin koko tavuina, joka on lähetetty asiakkaalle
   
-  - Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0 = Käyttäjän käyttämä ohjelma, jolla pyyntö tehtiin
+  - **Mozilla/5.0 (X11; Linux x86_64; rv:140.0) Gecko/20100101 Firefox/140.0** = Käyttäjän käyttämä ohjelma, jolla pyyntö tehtiin
   
   (Girvin. URL: [Understanding the apache access log: how to view, locate, and analyze](https://www.sumologic.com/blog/apache-access-log))
 
@@ -448,18 +448,6 @@ Mutta sielläkin oli vain aikaisemman skannauksen merkkijono, joten uusimmasta s
 
 Minulla oli mennyt tehtävissä jo sen verran kauan ja aika alkoi loppumaan, joten päätin lopettaa tehtävän tähän pisteeseen. Muutenkin kyseessä oli vapaaehtoinen tehtävä.
 
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
 ## Lähteet
 
 Bianco, D. 1.3.2013. Enterprise Detection & Response. Luettavissa: [Enterprise Detection &amp; Response: The Pyramid of Pain](https://detect-respond.blogspot.com/2013/03/the-pyramid-of-pain.html). Luettu: 31.10.2025.
@@ -505,5 +493,10 @@ Ngrep-komennon virallinen manuaali terminaalissa Kali Linuxilla. Komento: man ng
 Mozilla. 4.7.2025. Access-Control-Request-Method header. Luettavissa: [Access-Control-Request-Method header - HTTP | MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Access-Control-Request-Method). Luettu: 2.11.2025.
 
 Mozilla. 4.7.2025. Access-Control-Request-Headers header. Luettavissa: [Access-Control-Request-Headers header - HTTP | MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Access-Control-Request-Headers). Luettu: 2.11.2025.
-
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 *Tätä dokumenttia saa kopioida ja muokata GNU General Public License (versio 3 tai uudempi) mukaisesti. http://www.gnu.org/licenses/gpl.html*
