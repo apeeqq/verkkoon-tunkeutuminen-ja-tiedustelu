@@ -452,19 +452,31 @@ Minulla oli mennyt tehtävissä jo sen verran kauan ja aika alkoi loppumaan, jot
 
 Bianco, D. 1.3.2013. Enterprise Detection & Response. Luettavissa: [Enterprise Detection &amp; Response: The Pyramid of Pain](https://detect-respond.blogspot.com/2013/03/the-pyramid-of-pain.html). Luettu: 31.10.2025.
 
+Black Duck Editorial Staff. 22.3.2015. The 3 laws of robots.txt. Luettavissa: [Robots.txt Security Risk Review and Mitigation | Black Duck Blog](https://www.blackduck.com/blog/robots-txt.html). Luettu: 1.11.2025.
+
 Caltagirone, S., Pendergast, A. & Betz, C. The Diamond Model of Intrusion Analysis. Luettavissa: [The Diamond Model of Intrusion Analysis](https://www.threatintel.academy/wp-content/uploads/2020/07/diamond-model.pdf). Luettu: 31.10.2025.
+
+ChatGPT-tekoäly. GPT-3.5. Syöte: i have FUKD method in my apache log file, after i ran port scan with nmap -A. Generoitu: 1.11.2025.
+
+ChatGPT-tekoäly. GPT-3.5. Syöte: what is not shown: 999 closed tcp ports (reset) mean?. Generoitu: 1.11.2025.
+
+ChatGPT-tekoäly. GPT-3.5. Syöte: what scripts are included in -A nmap scan. Generoitu: 1.11.2025.
 
 Girvin, D. 20.2.2025. Understanding the Apache access log: how to view, locate, and analyze. Luettavissa: [Understanding the apache access log: how to view, locate, and analyze](https://www.sumologic.com/blog/apache-access-log). Luettu: 31.10.2025.
 
+Grep-komennon virallinen manuaali terminaalissa Kali Linuxilla. Komento: man grep. Luettu: 1.11.2025.
+
+Mozilla. 4.7.2025. Access-Control-Request-Headers header. Luettavissa: [Access-Control-Request-Headers header - HTTP | MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Access-Control-Request-Headers). Luettu: 2.11.2025.
+
+Mozilla. 4.7.2025. Access-Control-Request-Method header. Luettavissa: [Access-Control-Request-Method header - HTTP | MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Access-Control-Request-Method). Luettu: 2.11.2025.
+
+Mozilla. OPTIONS request method. Luettavissa: [OPTIONS request method - HTTP | MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods/OPTIONS). Luettu: 1.11.2025.
+
+Ngrep-komennon virallinen manuaali terminaalissa Kali Linuxilla. Komento: man ngrep. Luettu: 2.11.2025.
+
 Nmap ohje/manuaali komentoriviltä Kali Linuxilla. Komento: man nmap. Luettu: 31.10.2025.
 
-Stack Exchange Inc. 2015. mass_dns: warning: Unable to determine any DNS servers. Reverse DNS is disabled. Luettavissa: [virtual machine - mass_dns: warning: Unable to determine any DNS servers. Reverse DNS is disabled - Unix &amp; Linux Stack Exchange](https://unix.stackexchange.com/questions/225394/mass-dns-warning-unable-to-determine-any-dns-servers-reverse-dns-is-disabled). Luettu: 1.11.2025.
-
 Nmap. Host Discovery. Luettavissa: [Host Discovery | Nmap Network Scanning](https://nmap.org/book/man-host-discovery.html). Luettu: 1.11.2025.
-
-Stack Exchange Inc. 2015. nmap doesn't appear to list all open ports. Luettavissa: [ssh - nmap doesn&#39;t appear to list all open ports - Unix &amp; Linux Stack Exchange](https://unix.stackexchange.com/questions/238640/nmap-doesnt-appear-to-list-all-open-ports). Luettu: 1.11.2025.
-
-ChatGPT-tekoäly. GPT-3.5. Syöte: what is not shown: 999 closed tcp ports (reset) mean?. Generoitu: 1.11.2025.
 
 Nmap. Device Types. Luettavissa: [Device Types | Nmap Network Scanning](https://nmap.org/book/osdetect-device-types.html). Luettu: 1.11.2025.
 
@@ -474,25 +486,13 @@ Nmap. Usage and Examples. Luettavissa: [Usage and Examples | Nmap Network Scanni
 
 Nmap. Usage and Examples. Luettavissa: [Usage and Examples Default | Nmap Network Scanning](https://nmap.org/book/nse-usage.html#nse-category-default). Luettu: 1.11.2025.
 
-ChatGPT-tekoäly. GPT-3.5. Syöte: what scripts are included in -A nmap scan. Generoitu: 1.11.2025.
-
 Stack Exchange Inc. 2014. What is HTTP Method PROPFIND used for?. Luettavissa: [What is HTTP Method PROPFIND used for? - Webmasters Stack Exchange](https://webmasters.stackexchange.com/questions/59211/what-is-http-method-propfind-used-for). Luettu: 1.11.2025.
 
-Mozilla. OPTIONS request method. Luettavissa: [OPTIONS request method - HTTP | MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Methods/OPTIONS). Luettu: 1.11.2025.
+Stack Exchange Inc. 2015. mass_dns: warning: Unable to determine any DNS servers. Reverse DNS is disabled. Luettavissa: [virtual machine - mass_dns: warning: Unable to determine any DNS servers. Reverse DNS is disabled - Unix &amp; Linux Stack Exchange](https://unix.stackexchange.com/questions/225394/mass-dns-warning-unable-to-determine-any-dns-servers-reverse-dns-is-disabled). Luettu: 1.11.2025.
 
-ChatGPT-tekoäly. GPT-3.5. Syöte: i have FUKD method in my apache log file, after i ran port scan with nmap -A. Generoitu: 1.11.2025.
-
-Black Duck Editorial Staff. 22.3.2015. The 3 laws of robots.txt. Luettavissa: [Robots.txt Security Risk Review and Mitigation | Black Duck Blog](https://www.blackduck.com/blog/robots-txt.html). Luettu: 1.11.2025.
-
-Grep-komennon virallinen manuaali terminaalissa Kali Linuxilla. Komento: man grep. Luettu: 1.11.2025.
+Stack Exchange Inc. 2015. nmap doesn't appear to list all open ports. Luettavissa: [ssh - nmap doesn&#39;t appear to list all open ports - Unix &amp; Linux Stack Exchange](https://unix.stackexchange.com/questions/238640/nmap-doesnt-appear-to-list-all-open-ports). Luettu: 1.11.2025.
 
 Wikipedia. 9.8.2025. ngrep. Luettavissa: [ngrep - Wikipedia](https://en.wikipedia.org/wiki/Ngrep). Luettu: 2.11.2025.
-
-Ngrep-komennon virallinen manuaali terminaalissa Kali Linuxilla. Komento: man ngrep. Luettu: 2.11.2025.
-
-Mozilla. 4.7.2025. Access-Control-Request-Method header. Luettavissa: [Access-Control-Request-Method header - HTTP | MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Access-Control-Request-Method). Luettu: 2.11.2025.
-
-Mozilla. 4.7.2025. Access-Control-Request-Headers header. Luettavissa: [Access-Control-Request-Headers header - HTTP | MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Headers/Access-Control-Request-Headers). Luettu: 2.11.2025.
 <br>
 <br>
 <br>
