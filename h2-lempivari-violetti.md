@@ -62,7 +62,7 @@ sudo systemctl start apache2 #Käynnistää apachen weppipalvelimen
 
 Laitoin apachen "access.log" lokitiedoston päälle, eli siis seuraamaan reaaliaikaisesti tapahtumia.
 
-![](/home/aapo/.config/marktext/images/2025-10-31-13-26-52-tail-apache-tyhja.png)
+![Apachen lokitiedosto tyhjänä](tail-apache-tyhja.png)
 
 **Kuva 1.** Apachen lokitiedosto on tyhjä
 
@@ -76,7 +76,7 @@ curl http://localhost #Tekee http-pyynnön paikalliseen ip-osoitteeseen
 
 Sitten olikin lokitiedostoon ilmestynyt tietoa.
 
-![](/home/aapo/.config/marktext/images/2025-10-31-13-39-32-tail-apache-tietoa.png)
+![Apachen lokitiedostossa tietoa](tail-apache-tietoa.png)
 
 **Kuva 2.** Http-pyyntö apachen lokitiedostossa
 
@@ -118,7 +118,7 @@ Skannasin seuraavaksi localhost portin 80 komennolla
 nmap -A localhost
 ```
 
-![](/home/aapo/.config/marktext/images/2025-10-31-21-08-32-nmap-localhost.png)
+![Nmap skannauksen tulos](nmap-localhost.png)
 
 **Kuva 3.** Nmap skannauksen tulos
 
@@ -174,7 +174,7 @@ Lisäksi kysyin ChatGPT:ltä: "what scripts are included in -A nmap scan". Vasta
 
 Löysin hakemistopolusta /usr/share/nmap/scripts/ skriptejä, joten tulostin yhden sellaisen näytölle. Siellä näkyi olevan "categories" kohta, jossa lukee erilaisia kategorioita, joiden avulla tekoäly kehoitti suodattamaan oletus-kategorian omaavat skriptit. Lisäksi tekoäly 
 
-![](/home/aapo/.config/marktext/images/2025-11-01-16-34-17-esimerkki-kategorioista.png)
+![Erilaisia kategorioita](esimerkki-kategorioista.png)
 
 **Kuva 4.** Kategoriat tiedostosta http-xssed.nse
 
@@ -186,7 +186,7 @@ grep -R "categories *= *{.*default" /usr/share/nmap/scripts/ -n
 
 Tulosteessa oli todella paljon skriptejä, joten laitan vain alkuosan skripteistä kuvakaappauksena, koska se varmasti riittänee tehtävässä.
 
-![](/home/aapo/.config/marktext/images/2025-11-01-16-44-12-default-skriptit-1.png)
+![Oletus-kategoriaan kuuluvat](default-skriptit-1.png)
 
 **Kuva 5.** Oletus-kategoriaan kuuluvia skriptejä
 
@@ -196,7 +196,7 @@ Tulosteessa oli todella paljon skriptejä, joten laitan vain alkuosan skripteist
 
 Aloitin avaamalla access.log tiedoston polusta /var/log/apache2/. Sieltä löytyikin paljon rivejä, jotka olivat nmapin jäljiltä.
 
-![](/home/aapo/.config/marktext/images/2025-11-01-18-03-33-apache-log-nmap.png)
+![Tiedosto access.log](apache-log-nmap.png)
 
 **Kuva 6.** Osa tiedostosta access.log
 
@@ -234,19 +234,19 @@ pystyy hakemaan kaikki rivit tiedostosta "access.log", jotka sisältävät sanan
 
 Tein tehtävänannon mukaisen kaappauksen wiresharkilla skannatessani localhostia nmapilla. Suodatin opettajan vinkkien mukaan wiresharkin näyttämään vain kehykset, jotka sisälsivät sanan "nmap".
 
-![](/home/aapo/.config/marktext/images/2025-11-02-09-28-22-wireshark-nmap-localhost.png)
+![Kehyksiä wiresharkista](wireshark-nmap-localhost.png)
 
 **Kuva 7.** Löytyneet kehykset suodatuksella
 
 Löysinkin samankaltaisia merkintöjä sovelluskerroksesta, kuin apachen lokista aikaisemmin. Alla olevassa kehyksessä oli käytetty propfind-metodia.
 
-![](/home/aapo/.config/marktext/images/2025-11-02-09-31-51-nmap-wireshark-propfind.png)
+![Kehys](nmap-wireshark-propfind.png)
 
 **Kuva 8.** Kehys nro 2092
 
 Alla olevassa kuvass oli käytetty puolestaan post-metodia.
 
-![](/home/aapo/.config/marktext/images/2025-11-02-09-44-33-nmap-post-wireshark.png)
+![Kehys](nmap-post-wireshark.png)
 
 **Kuva 9.** Kehys nro 2107
 
@@ -272,7 +272,7 @@ Valinta "-i" puolestaan jätti jälleen huomiotta, onko kirjain iso vai pieni. S
 
 Seuraavaksi oli vuorossa komennon ajaminen
 
-![](/home/aapo/.config/marktext/images/2025-11-02-10-28-48-ngrep-nmap.png)
+![Verkon skannausta ilman liikennetta](ngrep-nmap.png)
 
 **Kuva 10.** Ngrep-skannaus päällä ilman liikennettä
 
@@ -284,11 +284,11 @@ nmap -A localhost
 
 Tämän jälkeen olikin tullut paljon tietoa ngrepillä. Laitoin kaksi kuvakaappausta, vaikka olisi ollut enemmänkin. Tehtävän tarkoitus toteutunee uskoakseni parilla kuvakaappauksella, koska tiedoissa olivat samoja tietoja, kuin aikaisemmissa tehtävissä ilmi tulleet.
 
-![](/home/aapo/.config/marktext/images/2025-11-02-10-35-25-ngrep-localhost-tiedot-1.png)
+![Saatuja tietoja ngrepilla](ngrep-localhost-tiedot-1.png)
 
 **Kuva 11.** Ngrepillä saatuja tietoja
 
-![](/home/aapo/.config/marktext/images/2025-11-02-10-40-30-ngrep-localhost-tiedot-2.png)
+![Lisaa ngrepilla saatuja tietoja](ngrep-localhost-tiedot-2.png)
 
 **Kuva 12.** Lisää ngrepillä saatuja tietoja
 
@@ -314,7 +314,7 @@ Löysin nmapin virallisesta manuaalista terminaalin kautta tietoja (komento: "ma
 
 Katsoin apachen lokeista, miltä normaalisti user-agent näytti, koska olin jo aikaisemmin mennyt firefox-selaimen kautta localhost-osoitteeseen.
 
-![](/home/aapo/.config/marktext/images/2025-11-02-17-00-51-user-agent-normaali.png)
+![Firefoxin kayttaja-agentti](user-agent-normaali.png)
 
 **Kuva 13.** Normaalin user-agent tiedon esitystapa
 
@@ -330,37 +330,37 @@ nmap -A localhost --script-args http.useragent="Mozilla/5.0 (X11; Linux x86_64; 
 
 Skannaus onnistui.
 
-![](/home/aapo/.config/marktext/images/2025-11-02-17-13-10-user-agent-muutettu-vastaus.png)
+![Vastaus skannaukseen](user-agent-muutettu-vastaus.png)
 
 **Kuva 14.** Skannauksen tulos
 
 Tulos oli toivotunlainen, koska ainakin wiresharkissa user-agent kohdassa oli haluttu arvo.
 
-![](/home/aapo/.config/marktext/images/2025-11-02-17-20-03-user-agent-muutettu-wireshark.png)
+![Kehys](user-agent-muutettu-wireshark.png)
 
 **Kuva 15.** Kehys nro 2253
 
 Alla vielä options-metodilla lähetetty frame, jossa user-agent oli myös toivotunlainen.
 
-![](/home/aapo/.config/marktext/images/2025-11-02-17-24-29-user-agent-options-muutettu.png)
+![Kehys](user-agent-options-muutettu.png)
 
 **Kuva 16.** Kehys nro 2310
 
 Kävin vielä katsomassa apachen access.log tiedostosta, oliko sielläkin oikea user-agent? Sieltä löytyi halutunlaista user-agenttia.
 
-![](/home/aapo/.config/marktext/images/2025-11-02-18-26-36-user-agent-muutettu-apache-log.png)
+![Apachen lokitiedosto](user-agent-muutettu-apache-log.png)
 
 **Kuva 17.** User-agent muutettuna apachen lokitiedostossa apache.log
 
 Sain siis peitettyä täydellisesti "nmap" merkkijonon user-agent kohdasta. Ainoastaan yhdessä get-metodilla toteutetussa kyselyssä oli vielä sana "nmap".
 
-![](/home/aapo/.config/marktext/images/2025-11-02-18-31-13-viimeinen-nmap.png)
+![Viimeinen merkkijono](viimeinen-nmap.png)
 
 **Kuva 18.** Viimeinen "nmap" merkkijono
 
 Löysin saman paketin vielä wiresharkistakin.
 
-![](/home/aapo/.config/marktext/images/2025-11-02-18-35-33-wireshark-viimeinen-nmap.png)
+![Wiresharkissa viimeinen merkkijono](wireshark-viimeinen-nmap.png)
 
 **Kuva 19.** Viimeinen "nmap" merkkijono wiresharkissa
 
@@ -384,13 +384,13 @@ grep -ir "nmaplowerch"
 
 jolloin tärppäsi.
 
-![](/home/aapo/.config/marktext/images/2025-11-02-18-47-04-grep-lowercheck.png)
+![Viimeinen merkkijono paikannettuna](grep-lowercheck.png)
 
 **Kuva 20.** Viimeinen "nmap" merkkijono paikannettu
 
 Näköjään tiedostossa "http.lua" on lisätietoa, että muokattavana oleva rivi liittyy 404 http-koodin tarkasteluun. Kommentoin itse rivin vain pois, mutta ehkä joissain tilanteissa olisi tarpeellista löytää jokin korvike elementille.
 
-![](/home/aapo/.config/marktext/images/2025-11-02-18-59-02-lowercheck-kommentoituna.png)
+![Kommentoitu rivi](lowercheck-kommentoituna.png)
 
 **Kuva 21.** Rivi kommentoituna
 
@@ -402,19 +402,19 @@ nmap -A localhost --script-args http.useragent="Mozilla/5.0 (X11; Linux x86_64; 
 
 Vastauksena tuli tuttua tekstiä, mutta myös muutama virheilmoitus skriptien ajamisesta. Merkkasin punaisella virheet.
 
-![](/home/aapo/.config/marktext/images/2025-11-02-19-17-03-nmap-tulos-taysin-muutettu-korostettu.png)
+![Vastaus muutosten jalkeen](nmap-tulos-taysin-muutettu-korostettu.png)
 
 **Kuva 22.** Vastaus skannauksesta tiedostojen muuttamisen jälkeen
 
 Apachen lokitiedostosta "access.log" ei löytynyt sanaa "nmap" enää.
 
-![](/home/aapo/.config/marktext/images/2025-11-02-19-19-49-apache-log-ei-nmap.png)
+![Merkkijono oli poistunut](apache-log-ei-nmap.png)
 
 **Kuva 23.** Merkkijono "nmap" oli poistunut apachen lokista
 
 En huomannut laittaa wiresharkia päälle, joten tein uuden skannauksen wiresharkin ollessa päällä samalla komennolla kuin viimeksi tehty skannaus. Alla olevasta kuvasta voi päätellä, että peittely onnistui.
 
-![](/home/aapo/.config/marktext/images/2025-11-02-19-28-56-nmap-ei-wiresharkissa.png)
+![Merkkijono poistunut wiresharkista](nmap-ei-wiresharkissa.png)
 
 **Kuva 24.** Merkkijonoa "nmap" ei löytynyt wiresharkistakaan
 
@@ -424,13 +424,13 @@ En huomannut laittaa wiresharkia päälle, joten tein uuden skannauksen wireshar
 
 Kysyin ChatGPT:ltä mitkä skriptit voisivat olla hyödyllisiä kokeilla. Vastauksessa oli "ssl-cert" skripti, joten katsoin sen sisältävän merkkijonon "nmap".
 
-![](/home/aapo/.config/marktext/images/2025-11-02-19-51-29-ssl-cert-skripti-merkkijono.png)
+![Skriptin riveja](ssl-cert-skripti-merkkijono.png)
 
 **Kuva 25.** Skriptin rivit joissa esiintyy "nmap"
 
 Kuitenkaan skannauksen tiedoissa, ilman mitään toimenpiteitä, ei löytynyt merkkijonoa.
 
-![](/home/aapo/.config/marktext/images/2025-11-02-19-54-54-wireshark-ssl-ei.png)
+![Wireshark kaappaus](wireshark-ssl-ei.png)
 
 **Kuva 26.** Wireshark kaappaus ilman merkkijonoa
 
@@ -442,7 +442,7 @@ cat /var/log/apache2/access.log | grep -i "nmap"
 
 Mutta sielläkin oli vain aikaisemman skannauksen merkkijono, joten uusimmasta skannauksesta ei ollut jäänyt jälkeä.
 
-![](/home/aapo/.config/marktext/images/2025-11-02-20-03-58-viimeinen-nmap-apache-log.png)
+![Lokitiedoston viimeinen osuma](viimeinen-nmap-apache-log.png)
 
 **Kuva 27.** Viimeinen osuma merkkijonolle "nmap"
 
