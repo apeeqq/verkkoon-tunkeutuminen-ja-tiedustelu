@@ -83,7 +83,7 @@ LocateRisk-yritys tarjoaa Security Rating palvelua, jolla voidaan tarkastella yr
 
 Tutkin tunnin signaaleja osoitteesta websdr.org. Löysin erilaisia yhdistelmiä koittamalla jotain ääntä, mutta en mitään kunnollisia kanavia. Kokeilin Utahissa ja Bordeauxissa olevia vastaanottimia.
 
-![](/home/aapo/.config/marktext/images/2025-11-08-19-37-55-bordeaux-sdr.png)
+![Bordeaux websdr](bordeaux-sdr.png)
 
 **Kuva 1.** Bordeauxissa sijaitsevan vastaanottimen verkkosivu
 
@@ -111,13 +111,13 @@ rtl_433 -r (tiedostopolku)
 
 **9.11.2025 Klo 09.00**
 
-![](/home/aapo/.config/marktext/images/2025-11-09-09-06-10-rtl-433-tiedosto-1.png)
+![Tiedosto rtl-433](rtl-433-tiedosto-1.png)
 
 **Kuva 2.** Osa tarkasteltavasta tiedostosta
 
 Tiedostossa oli todennäköisesti jokin kodin turvajärjestelmä, koska "model: Proove-Security" ja "model: Nexa-Security" kohdissa olivat kentät "House Code". Löysinkin Nexa Systemin kotisivut, jotka liittyivätkin kodin IoT-laitteisiin (NEXA SYSTEMS. URL: [NexaSystem](https://nexasystem.com/)).
 
-![](/home/aapo/.config/marktext/images/2025-11-09-09-16-26-nexa-proove.png)
+![Nexan ja prooven osa](nexa-proove.png)
 
 **Kuva 3.** Nexa-Security ja Proove-Security sarakkeet
 
@@ -125,7 +125,7 @@ En löytänyt oikein hakukoneiden kautta tietoa, mikä oli "Group Call" sarake, 
 
 (ChatGPT. Syöte: what is group call in rtl_433)
 
-![](/home/aapo/.config/marktext/images/2025-11-09-09-38-43-group-call.png)
+![Group call sarake](group-call.png)
 
 **Kuva 4.** Viesti ei ollut broadcast
 
@@ -143,7 +143,7 @@ Minun piti toisinsanoen vaihtaa ".complex16s" muotoon ".cs8". Löysin ohjeen Git
 
 (GitHub. URL: [BMW GEN 3 TPMS signal decoding · Issue #2893 · merbanan/rtl_433 · GitHub](https://github.com/merbanan/rtl_433/issues/2893))
 
-![](/home/aapo/.config/marktext/images/2025-11-09-09-57-36-cs8.png)
+![Tiedosto auki](cs8.png)
 
 **Kuva 5.** Alkuperäisellä tiedostopäätteellä tiedosto ei avautunut
 
@@ -157,13 +157,13 @@ Katsoin tehtävän vinkeistä mallia, miten URH asennetaan. Siellä käytettiin 
 
 Sain kuitenkin virheilmoituksen asennettaessa sitä.
 
-![](/home/aapo/.config/marktext/images/2025-11-09-13-56-47-error-urh.png)
+![Virheilmoitus asennettaessa ohjelmaa](error-urh.png)
 
 **Kuva 6.** Virheilmoitus asennettaessa URH ohjelmaa
 
 Lähdin katsomaan lokitiedostoa, joka luki virheilmoituksessa.
 
-![](/home/aapo/.config/marktext/images/2025-11-09-13-59-02-urh-error-log.png)
+![Lokitiedoston virheilmoitus](urh-error-log.png)
 
 **Kuva 7.** Virheilmoitus lokitiedostossa
 
@@ -175,25 +175,25 @@ python3 -m pip install cython
 
 Sain uudestaan virheilmoituksen
 
-![](/home/aapo/.config/marktext/images/2025-11-09-14-02-11-cython-error.png)
+![Virheilmoitus asennettaessa cythonia](cython-error.png)
 
 **Kuva 8.** Virheilmoitus asennettaessa Cythonia
 
 Tajusin hieman surffailtuani netissä, että minun pitäisi varmaan laittaa komentoon "pip" sijaan "pipx". Sillä se onnistuikin.
 
-![](/home/aapo/.config/marktext/images/2025-11-09-14-14-12-pipx-cython.png)
+![Pipx cythonin lataaminen](pipx-cython.png)
 
 **Kuva 9.** Cythonin asennus onnistui
 
 Mutta sama virheilmoitus edelleen
 
-![](/home/aapo/.config/marktext/images/2025-11-09-14-15-44-error-urh-2.png)
+![Sama virheilmoitus asennettaessa](error-urh-2.png)
 
 **Kuva 10.** Virheilmoitus jälleen asennettaessa URH:a
 
 Kävin katsomassa jälleen virhelokia, mutta samanlainen ilmoitus sielläkin.
 
-![](/home/aapo/.config/marktext/images/2025-11-09-14-17-44-error-urh-log-2.png)
+![Lokitiedoston samanlainen virheilmoitus](error-urh-log-2.png)
 
 **Kuva 11.** Uusin virheilmoitus lokitiedostossa
 
