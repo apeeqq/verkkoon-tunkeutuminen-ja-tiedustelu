@@ -32,20 +32,19 @@ BSSID on "Basic Service Set Identifier", joka kertoo jokaisen AP:n fyysisen ja u
 
 Suhtautumiseni on todella paljon skeptisempi langattomia verkkoja kohtaan, kuin ennen harjoitusta. Minun pitääkin tulevaisuudessa opiskella vielä lisää keinoja, joilla voin vahvistaa langattomien verkkojen turvallisuutta. Tekniikat toki kehittyvät kovin, joten onkin itsestäänselvää, että uusia keinoja puolustautumiseen on syytä opetella ikuisesti. Suojautuminen on kuitenkin aina kilpajuoksua pahantahtoisten toimijoiden kanssa. On pysyttävä toisinsanoen aina askeleen edellä heitä.
 
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
-<br>
-
 ## Lähteet
 
 Sainikhil, K. 29.12.2024. Understanding SSID, BSSID, and ESSID in Wi-Fi Networks. LinkedIn. Luettavissa: [Understanding SSID, BSSID, and ESSID in Wi-Fi Networks](https://www.linkedin.com/pulse/understanding-ssid-bssid-essid-wi-fi-networks-kola-sainikhil-is7bc). Luettu: 14.11.2025.
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+<br>
 
 *Tätä dokumenttia saa kopioida ja muokata GNU General Public License (versio 3 tai uudempi) mukaisesti. http://www.gnu.org/licenses/gpl.html*
