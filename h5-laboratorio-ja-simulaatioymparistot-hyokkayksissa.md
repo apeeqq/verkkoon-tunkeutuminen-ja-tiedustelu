@@ -57,7 +57,7 @@ Tämän jälkeen ajattelin, että saisin varmaan helpoiten python-demonilla koke
 
 
 
-![](/home/aapo/.config/marktext/images/2025-11-23-20-35-20-python-server.png)
+![Python-demoni taustalle](python-server.png)
 
 **Kuva 1.** h2-päätteessä python-demoni pystyyn taustalle
 
@@ -67,7 +67,7 @@ Seuraavaksi katsoin top-ohjelmalla resurssien käyttöä h2-päätteellä, josta
 
 
 
-![](/home/aapo/.config/marktext/images/2025-11-23-20-36-43-top-before.png)
+![Resurssit ennen hyokkaysta](top-before.png)
 
 **Kuva 2.** Resurssien käyttö oli maltillista ennen hyökkäystä
 
@@ -77,7 +77,7 @@ Yllä olevassa kuvassa en ollut siis vielä ajanut hping3-ohjelmaa.
 
 Aloitin hyökkäyksen, jonka jälkeen näkikin selvästi, kuinka erityisesti prosessorin kuormitus kasvoi olennaisesti.
 
-![](/home/aapo/.config/marktext/images/2025-11-23-20-39-55-top-while-attack.png)
+![Resurssit hyokkayksen aikana](top-while-attack.png)
 
 **Kuva 3.** Resurssien käyttöä hyökkäyksen aikana
 
@@ -118,13 +118,3 @@ Novotny, J. 9.5.2024. How to Emulate a SYN Flood Attack With Kali Linux. Luettav
 <br>
 
 *Tätä dokumenttia saa kopioida ja muokata GNU General Public License (versio 3 tai uudempi) mukaisesti. http://www.gnu.org/licenses/gpl.html*
-
-
-
-
-
-
-
-
-
-
