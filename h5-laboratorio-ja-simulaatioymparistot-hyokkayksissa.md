@@ -24,8 +24,6 @@ Päätin etten asenna työkalua, koska mininet harjoitusten kanssa minulla meni 
 
 - Kirjoita miten loit mininet ympäristön ja miten toteutit hyökkäyksen. 
 
-**23.11.2025 Klo 19.45**
-
 Lähdin ensimmäiseksi etsimään tietoa ohjelmasta, jolla voisi suorittaa TCP SYN-Flood hyökkäyksen. Löysinkin melko nopeasti linoden sivustolta artikkelin, jossa kerrottiin "hping3" ohjelmasta. Päätin kokeilla sitä.
 
 (Novotny. URL: [How to Emulate a SYN Flood Attack With Kali Linux](https://www.linode.com/docs/guides/emulate-syn-flood-attack-with-kali-linux/))
