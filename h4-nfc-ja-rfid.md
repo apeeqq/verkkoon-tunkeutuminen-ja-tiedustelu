@@ -2,7 +2,7 @@
 
 *Tekijä: Aapo Tavio*
 
-*Pohjana Tero Karvinen 2025: Verkkoon tunkeutuminen ja tiedustelu 2025 syksy, [Verkkoon tunkeutuminen ja tiedustelu - Network Attacks and Reconnaissance]([Verkkoon tunkeutuminen ja tiedustelu - Network Attacks and Reconnaissance](https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/#h4-nfc-ja-rfid))*
+*Pohjana Tero Karvinen 2025: Verkkoon tunkeutuminen ja tiedustelu 2025 syksy, [Verkkoon tunkeutuminen ja tiedustelu - Network Attacks and Reconnaissance](https://terokarvinen.com/verkkoon-tunkeutuminen-ja-tiedustelu/#h4-nfc-ja-rfid)*
 
 ## a) Tarkastele käytössäsi olevia RFID tuotteita, mieti miten hyvin olet suojautunut RFID urkinnalta?
 
@@ -46,7 +46,7 @@ Palasin tarkastelemaan aikaisemmin viittaamaani Yubicon sivua asiasta, joka tuki
 
 
 
-Löysin mielenkiintoisen uutisen Fox Newsin sivuilta, joka kertoo "ghost tapping" nimisestä huijauksesta. Kyseessä on ainakin mielestäni vähän useampien huijauksien yhdistelmä kyseessä, kuin vain yksi. Perinteinen kohdelaitteen lähelle pääseminen ja sen luvatta lukeminen on yksi tapa.
+Löysin mielenkiintoisen uutisen Fox Newsin sivuilta, joka kertoo "ghost tapping" nimisestä huijauksesta. Kyseessä on, ainakin mielestäni, vähän useampien huijauksien yhdistelmä kyseessä, kuin vain yksi. Perinteinen kohdelaitteen lähelle pääseminen ja sen luvatta lukeminen on yksi tapa.
 
 Toinen on pahantahtoisen toimijan tekeytyminen hyväntekeväisyyden nimissä toimivaksi myyjäksi tai joksikin muuksi myyjäksi, joka ei ota vastaan kuin lähimaksulla suoritettavaa maksua. Myyjät veloittavat suuremman summan, josta on sovittu tai he veloittavat ensin pienemmän summan ja heti perään suuremman summan. Joillakin voi olla jopa lukijoita, joilla he yrittävät saada lompakon sisältä tai laukusta napattua signaaleja.
 
@@ -76,15 +76,10 @@ Suojautumiseen annetaan ohjeeksi yhdeksän kohdan lista, joka sisältää
 
 Artikkeli oli mielestäni mielenkiintoinen, koska siinä oli melko perinteinen tapa toteuttaa rikollista toimintaa, toisinsanoen mennä lähelle kohdelaitetta, joka on omistajan hallussa. Ja toisaalta artikkelissa oli ainakin itselleni tuntemattomampi tapa toteuttaa rikollista toimintaa, joka oli puolestaan tekeytyminen myyjäksi ja kiertelemällä julkisilla paikoilla keräämässä maksuja. Kaiken lisäksi uutinen oli hyvin tuore, joka osoittaa perinteisen tavan ja uudemman tavan olevan läsnä nykypäivän maailmassa.
 
-Suojautumiskeinotkin ovat mielestäni melko perustavanlaatuisia, joista usein kuuluu puhuttavan, mutta tämä taas merkitsee mielestäni vain sitä, kuinka paljon suojautuminen ns. tavallisen tallaajan näkökulmasta perustuu perusasioihin? Perusasioilla pääsee usein jo pitkälle. Mielestäni myös uudenlainen hyökkäysmalli kiertelevänä myyjänä osoittaa toteen nykypäivänä usein kuultavaan väitteeseen, että tekniset laitteet ovat jo lähtökohtaisesti melko hyvin suojattuja, joten käyttäjä on heikoin lenkki kyberrikollisuudessa. Myyjä yrittää käyttää ihmisen heikkouksia hyväkseen, kuten aikaa, tarkkaavaisuutta ja huolimattomuutta.
+Suojautumiskeinotkin ovat mielestäni melko perustavanlaatuisia, joista usein kuuluu puhuttavan, mutta tämä taas merkitsee mielestäni vain sitä, kuinka paljon suojautuminen ns. tavallisen tallaajan näkökulmasta perustuu perusasioihin? Perusasioilla pääsee usein jo pitkälle. Mielestäni myös uudenlainen hyökkäysmalli kiertelevänä myyjänä osoittaa toteen nykypäivänä usein kuultavan väitteen, että tekniset laitteet ovat jo lähtökohtaisesti melko hyvin suojattuja, joten käyttäjä on heikoin lenkki kyberrikollisuudessa. Myyjä yrittää käyttää ihmisen heikkouksia hyväkseen, kuten aikaa, tarkkaavaisuutta ja huolimattomuutta.
 
-
-
-
-
-
-
-
+<br>
+<br>
 
 ## Lähteet
 
