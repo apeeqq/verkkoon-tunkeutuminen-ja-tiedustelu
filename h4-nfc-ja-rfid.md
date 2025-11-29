@@ -89,7 +89,7 @@ ChatGPT. Kielimalli: GPT-4o mini. Syöte: "what are APDU commands". Generoitu: 2
 
 Google. Keep your payment info safe. Luettavissa: [Keep your payment info safe - Google Pay Help](https://support.google.com/googlepay/answer/7643925?hl=en#zippy=%2Cvirtual-cards). Luettu: 28.11.2025.
 
-Knutsson, K. 4.11.2025. Ghost-tapping scam targets tap-to-pay users. Luettavissa: [How to protect yourself from ghost-tapping payment card scams nationwide | Fox News](https://www.foxnews.com/tech/ghost-tapping-scam-targets-tap-to-pay-users). Luettu: 29.11.2025.
+Knutsson, K. 4.11.2025. Ghost-tapping scam targets tap-to-pay users. Fox News. Luettavissa: [How to protect yourself from ghost-tapping payment card scams nationwide | Fox News](https://www.foxnews.com/tech/ghost-tapping-scam-targets-tap-to-pay-users). Luettu: 29.11.2025.
 
 Pavlysko, D. 13.3.2025. How to Check If Your Wallet Has RFID Protection?. Luettavissa: [How to Check If Your Wallet Has RFID Protection? | hidemont.com](https://hidemont.com/blog/post/how-to-check-if-your-wallet-has-rfid-protection). Luettu: 28.11.2025.
 
