@@ -61,7 +61,7 @@
 
 Tutkin tunnin signaaleja osoitteesta websdr.org. Löysin erilaisia yhdistelmiä koittamalla jotain ääntä, mutta en mitään kunnollisia kanavia. Kokeilin Utahissa ja Bordeauxissa olevia vastaanottimia.
 
-![](/home/aapo/.config/marktext/images/2025-11-08-19-37-55-bordeaux-sdr.png)
+![WebSDR](bordeaux-sdr.png)
 
 **Kuva 1.** Bordeauxissa sijaitsevan vastaanottimen verkkosivu
 
@@ -89,13 +89,13 @@ rtl_433 -r (tiedostopolku)
 
 **9.11.2025 Klo 09.00**
 
-![](/home/aapo/.config/marktext/images/2025-11-09-09-06-10-rtl-433-tiedosto-1.png)
+![Osa tiedostosta](rtl-433-tiedosto-1.png)
 
 **Kuva 2.** Osa tarkasteltavasta tiedostosta
 
 Tiedostossa oli todennäköisesti jokin kodin turvajärjestelmä, koska "model: Proove-Security" ja "model: Nexa-Security" kohdissa olivat kentät "House Code". Löysinkin Nexa Systemin kotisivut, jotka liittyivätkin kodin IoT-laitteisiin (NEXA SYSTEMS. URL: [NexaSystem](https://nexasystem.com/)).
 
-![](/home/aapo/.config/marktext/images/2025-11-09-09-16-26-nexa-proove.png)
+![Nexan ja Prooven sarakkeet](nexa-proove.png)
 
 **Kuva 3.** Nexa-Security ja Proove-Security sarakkeet
 
@@ -103,7 +103,7 @@ En löytänyt oikein hakukoneiden kautta tietoa, mikä oli "Group Call" sarake, 
 
 (ChatGPT. Syöte: what is group call in rtl_433)
 
-![](/home/aapo/.config/marktext/images/2025-11-09-09-38-43-group-call.png)
+![Broadcast sarake](group-call.png)
 
 **Kuva 4.** Viesti ei ollut broadcast
 
@@ -121,7 +121,7 @@ Minun piti toisinsanoen vaihtaa ".complex16s" muotoon ".cs8". Löysin ohjeen Git
 
 (GitHub. URL: [BMW GEN 3 TPMS signal decoding · Issue #2893 · merbanan/rtl_433 · GitHub](https://github.com/merbanan/rtl_433/issues/2893))
 
-![](/home/aapo/.config/marktext/images/2025-11-09-09-57-36-cs8.png)
+![Tiedosto avattuna](cs8.png)
 
 **Kuva 5.** Alkuperäisellä tiedostopäätteellä tiedosto ei avautunut
 
@@ -135,13 +135,13 @@ Katsoin tehtävän vinkeistä mallia, miten URH asennetaan. Siellä käytettiin 
 
 Sain kuitenkin virheilmoituksen asennettaessa sitä.
 
-![](/home/aapo/.config/marktext/images/2025-11-09-13-56-47-error-urh.png)
+![Virheilmoitus](error-urh.png)
 
 **Kuva 6.** Virheilmoitus asennettaessa URH ohjelmaa
 
 Lähdin katsomaan lokitiedostoa, joka luki virheilmoituksessa.
 
-![](/home/aapo/.config/marktext/images/2025-11-09-13-59-02-urh-error-log.png)
+![Virheilmoitus lokissa](urh-error-log.png)
 
 **Kuva 7.** Virheilmoitus lokitiedostossa
 
@@ -153,25 +153,25 @@ python3 -m pip install cython
 
 Sain uudestaan virheilmoituksen
 
-![](/home/aapo/.config/marktext/images/2025-11-09-14-02-11-cython-error.png)
+![Virheilmoitus](cython-error.png)
 
 **Kuva 8.** Virheilmoitus asennettaessa Cythonia
 
 Tajusin hieman surffailtuani netissä, että minun pitäisi varmaan laittaa komentoon "pip" sijaan "pipx". Sillä se onnistuikin.
 
-![](/home/aapo/.config/marktext/images/2025-11-09-14-14-12-pipx-cython.png)
+![Onnistunut asennus](pipx-cython.png)
 
 **Kuva 9.** Cythonin asennus onnistui
 
 Mutta sama virheilmoitus edelleen
 
-![](/home/aapo/.config/marktext/images/2025-11-09-14-15-44-error-urh-2.png)
+![Virheilmoitus](error-urh-2.png)
 
 **Kuva 10.** Virheilmoitus jälleen asennettaessa URH:a
 
 Kävin katsomassa jälleen virhelokia, mutta samanlainen ilmoitus sielläkin.
 
-![](/home/aapo/.config/marktext/images/2025-11-09-14-17-44-error-urh-log-2.png)
+![Virheilmoitus](error-urh-log-2.png)
 
 **Kuva 11.** Uusin virheilmoitus lokitiedostossa
 
@@ -197,7 +197,7 @@ sudo apt-get -y install pipx
 pipx install urh #Koitin myös sudon kanssa, mutta sama virheilmoitus tuli
 ```
 
-![](/home/aapo/.config/marktext/images/2025-12-06-13-57-42-pipx-install-urh-error.png)
+![Virheilmoitus](pipx-install-urh-error.png)
 
 **Kuva 12.** Virheilmoitus asennettaessa urhia
 
@@ -213,13 +213,13 @@ pip install . #Asentaa hakemistossa olevan ohjelman. Yritin myös sudolla
 
 Kuitenkin sain virheilmoituksen.
 
-![](/home/aapo/.config/marktext/images/2025-12-06-14-04-32-pip-install-clone-error.png)
+![Virheilmoitus](pip-install-clone-error.png)
 
 **Kuva 13.** Virheilmoitus asennettaessa toisella tavalla urhia
 
 Yritin pipx:n kanssa myös asentaa.
 
-![](/home/aapo/.config/marktext/images/2025-12-06-14-16-28-pipx-install-error.png)
+![Virheilmoitus](pipx-install-error.png)
 
 **Kuva 14.** Virheilmoitus pipx:n kanssa
 
@@ -235,7 +235,7 @@ Päätin kokeilla toista ohjelmaa nimeltä "inspectrum", jonka pitäisi olla sam
 
 Avasin inspectrumissa tehtävän tiedoston.
 
-![](/home/aapo/.config/marktext/images/2025-12-06-20-05-32-inspectrum-yleiskuva.png)
+![Tiedosto inspectrumissa](inspectrum-yleiskuva.png)
 
 **Kuva 15.** Tehtävän tiedosto inspectrumissa
 
@@ -245,7 +245,7 @@ Surffailin netissä tovin ja yritin hahmottaa, miten inspectrumia oikein käytet
 
 Katsoin raportista, että tiedoston pituus pitäisi olla 5,49 sekuntia, joten päättelin sen perusteella "Sample rate" arvon olevan n. 248000.
 
-![](/home/aapo/.config/marktext/images/2025-12-06-21-12-32-inspectrum-pituus.png)
+![Näytteen pituus](inspectrum-pituus.png)
 
 **Kuva 16.** Sample rate asetettu arvoon 248000
 
